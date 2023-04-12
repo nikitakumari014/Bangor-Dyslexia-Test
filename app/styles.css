@@ -65,3 +65,16 @@ text-decoration: underline;
     text-align: center;
     font-weight: bolder;
 }
+.first{
+font-size: 30px;
+font-family: 'Times New Roman', Times, serif;
+font-weight: bold;
+color: #80471C;
+}
+.question
+{
+font-size: 40px;
+font-family: 'Times New Roman', Times, serif;
+font-weight: bold;
+color: #80471C;
+}
