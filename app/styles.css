@@ -1,0 +1,28 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #FFF;
+}
+
+header {
+    margin: 0.5rem;
+    height: 5rem;
+}
+
+.carousel-item {
+    background-color: red;
+    height: 28rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+footer {
+    text-align: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 1.5rem;
+}
