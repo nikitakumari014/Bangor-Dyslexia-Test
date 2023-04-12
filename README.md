@@ -1,1 +1,1 @@
-# Bongor-Dyslexia-Test
+# Bangor-Dyslexia-Test
