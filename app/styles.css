@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #FFF;
+    background-color: #6CB4EE;
 }
 
 header {
@@ -12,7 +12,7 @@ header {
 }
 
 .carousel-item {
-    background-color: red;
+    background-color: #FFC300;
     height: 28rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -25,4 +25,43 @@ footer {
 .carousel-control-prev,
 .carousel-control-next {
     width: 1.5rem;
+}
+.firstline{
+    text-align: center;
+    font-size: 18pt;
+    font-family: 'Times New Roman';
+    font-style: italic;
+    color: aliceblue;
+    text-shadow: 2px 2px 8px whitesmoke;
+}
+.caption{
+    text-align: center;
+    margin-left: 220px;
+    font-size: 15pt;
+    color: aliceblue;
+    font-family: 'Times New Roman';
+}
+.description
+{
+font-size: 40px;
+font-family: Courier New, monospace;
+font-weight: bolder;
+color: #80471C;
+font-style: italic;
+text-decoration: underline;
+}
+.paragraph
+{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    /* font-weight: bold; */
+    color: #80471C;
+    font-size: 25px;
+}
+.begin
+{
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    font-size: 20x;
+    text-align: center;
+    font-weight: bolder;
 }
