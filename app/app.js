@@ -49,7 +49,7 @@ const overlay = document.getElementById('overlay');
 openPopupButton.addEventListener('click', () => {
     const popup = document.querySelector('div.popup');
     const popupHeading = document.querySelector('div.popup h3');
-    popupHeading.innerText = `Based on your answers to the given questions, you score ${score} points.`;
+    popupHeading.innerText = `Based on your answers to the given questions, you scored ${score} points.`;
     if (score > 4)
         popupHeading.nextElementSibling.innerText = strongPossibility;
     else
