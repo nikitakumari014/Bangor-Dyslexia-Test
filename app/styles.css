@@ -13,8 +13,7 @@ header {
 
 .carousel-item {
     background-color: #FFC300;
-    height: 28rem;
-    padding-left: 1.5rem;
+    padding-left: 4rem;
     padding-right: 1.5rem;
 }
 
@@ -24,57 +23,97 @@ footer {
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 1.5rem;
+    width: 3rem;
 }
-.firstline{
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    width: 30rem;
+    height: 17rem;
+    padding: 10px 15px;
     text-align: center;
-    font-size: 18pt;
+    z-index: 10;
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#overlay {
+    transition: 100ms ease-in-out;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.firstline {
+    text-align: center;
+    font-size: 18px;
     font-family: 'Times New Roman';
     font-style: italic;
     color: aliceblue;
     text-shadow: 2px 2px 8px whitesmoke;
 }
-.caption{
+
+.caption {
     text-align: center;
     margin-left: 220px;
-    font-size: 15pt;
+    font-size: 15px;
     color: aliceblue;
     font-family: 'Times New Roman';
 }
-.description
-{
-font-size: 40px;
-font-family: Courier New, monospace;
-font-weight: bolder;
-color: #80471C;
-font-style: italic;
-text-decoration: underline;
+
+.description {
+    font-size: 40px;
+    font-family: Courier New, monospace;
+    font-weight: bolder;
+    color: #80471C;
+    font-style: italic;
+    text-decoration: underline;
 }
-.paragraph
-{
+
+.paragraph {
     font-family: Comic Sans MS, Comic Sans, cursive;
     /* font-weight: bold; */
     color: #80471C;
     font-size: 25px;
 }
-.begin
-{
+
+.begin {
     font-family: 'Courier New', Courier, monospace;
     color: red;
-    font-size: 20x;
+    font-size: 20px;
     text-align: center;
     font-weight: bolder;
 }
-.first{
-font-size: 30px;
-font-family: 'Times New Roman', Times, serif;
-font-weight: bold;
-color: #80471C;
+
+.first {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #80471C;
 }
-.question
-{
-font-size: 40px;
-font-family: 'Times New Roman', Times, serif;
-font-weight: bold;
-color: #80471C;
+
+.question {
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #80471C;
 }

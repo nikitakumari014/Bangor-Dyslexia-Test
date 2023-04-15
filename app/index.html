@@ -1,255 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    ></script>
-    <title>Bangor Dyslexia Test</title>
-  </head>
 
-  <body>
-    <header>
-      <blockquote class="firstline">
-        "An incredibly high percentage of successful entrepreneurs are
-        dyslexic."
-      </blockquote>
-      <figcaption class="caption">
-        -Malcolm Gladwell, Canadian journalist and Author
-      </figcaption>
-    </header>
-    <main>
-      <div class="card mb-3">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="My project-1 (1).png"
-              class="img-fluid rounded-start"
-              alt="girl holding a book and some random words"
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <div
-                id="carousel-for-questions"
-                class="carousel slide"
-                data-bs-ride="false"
-              >
-                <div class="carousel-indicators">
-                  <button
-                    type="button"
-                    data-bs-target="#carousel-for-questions"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="question 1"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carousel-for-questions"
-                    data-bs-slide-to="1"
-                    aria-label="question 2"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carousel-for-questions"
-                    data-bs-slide-to="2"
-                    aria-label="question 3"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carousel-for-questions"
-                    data-bs-slide-to="3"
-                    aria-label="question 4"
-                  ></button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.6.4.js"
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+  <script defer src="app.js"></script>
+  <title>Bangor Dyslexia Test</title>
+</head>
+
+<body>
+  <header>
+    <blockquote class="firstline">
+      "An incredibly high percentage of successful entrepreneurs are
+      dyslexic."
+    </blockquote>
+    <figcaption class="caption">
+      -Malcolm Gladwell, Canadian journalist and Author
+    </figcaption>
+  </header>
+  <div class="popup" id="popup">
+    <div class="popup-header">
+      <h3 class="popup-text"></h3>
+      <p></p>
+    </div>
+    <button data-close-button type="button" class="btn btn-success btn-lg">OK</button>
+  </div>
+  <main>
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="My project-1 (1).png" class="img-fluid rounded-start"
+            alt="girl holding a book and some random words" />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body h-100 container-fluid">
+            <div id="carousel-for-questions" class="carousel h-100 slide" data-bs-ride="false">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-for-questions" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="description"></button>
+                <button type="button" data-bs-target="#carousel-for-questions" data-bs-slide-to="1"
+                  aria-label="question 1"></button>
+                <button type="button" data-bs-target="#carousel-for-questions" data-bs-slide-to="2"
+                  aria-label="question 2"></button>
+                <button type="button" data-bs-target="#carousel-for-questions" data-bs-slide-to="3"
+                  aria-label="question 3"></button>
+                <button type="button" data-bs-target="#carousel-for-questions" data-bs-slide-to="4"
+                  aria-label="question 4"></button>
+                <button type="button" data-bs-target="#carousel-for-questions" data-bs-slide-to="5"
+                  aria-label="question 5"></button>
+                <button type="button" data-bs-target="#carousel-for-questions" data-bs-slide-to="6"
+                  aria-label="question 6"></button>
+                <button type="button" data-bs-target="#carousel-for-questions" data-bs-slide-to="7"
+                  aria-label="question 7"></button>
+                <button type="button" data-bs-target="#carousel-for-questions" data-bs-slide-to="8"
+                  aria-label="question 8"></button>
+                <button type="button" data-bs-target="#carousel-for-questions" data-bs-slide-to="9"
+                  aria-label="question 9"></button>
+                <button type="button" data-bs-target="#carousel-for-questions" data-bs-slide-to="10"
+                  aria-label="question 10"></button>
+              </div>
+              <div class="carousel-inner h-100">
+                <div class="carousel-item h-100 active">
+                  <h1 class="description">Bangor Dyslexia Test</h1>
+                  <p class="paragraph">
+                    This consists of a series of 8 questions
+                    wherein, every question has a score of 1 point. After
+                    completing this test, you'll be prompted to another page
+                    where the possiblity of being dyslexic will be declared.
+                  </p>
+                  <button class="btn btn-primary start">START</button>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <h1 class="description">Bangor Dyslexia Test</h1>
-                    <p class="paragraph">
-                      This consists of a series of 8 questions
-                      wherein, every question has a score of 1 point. After
-                      completing this test, you'll be prompted to another page
-                      where the possiblity of being dyslexic will be declared.
-                    </p>
-                    <p class="begin">To begin, Click Here!</p>
+                <div class="carousel-item h-100">
+                  <h1 class="question">Question: 1</h1>
+                  <p class="first">Are the given letters same?</p>
+                  <p>
+                  <div>
+                    <img src="d1.png" width="200px" height="200px"><br><br>
+                    <input type="radio" id="question-1-yes" name="question-1" value="yes">
+                    <label for="question-1-yes">YES</label><br>
+                    <input class="rightAnswer" type="radio" id="question-1-no" name="question-1" value="no">
+                    <label for="question-1-no">NO</label>
                   </div>
-                  <div class="carousel-item">
-                    <h1 class="question">Question: 1</h1>
-                    <p class="first">Are the given letters same?</p>
-                    <p>
-                      <div>
-                        <img src="d1.png" width="200px" height="200px"><br><br>
-                        <input type="radio" id="yes" name="yesorno" value="Yes">
-                        <label for="yes">YES</label><br>
-                        <input type="radio" id="no" name="yesorno" value="No">
-                        <label for="no">NO</label>
-                      </div>
-                    </p>
+                  </p>
+                </div>
+                <div class="carousel-item h-100">
+                  <h1 class="question">Question: 2</h1>
+                  <p class="first">Do you have trouble recognising which hand is left and which is right?</p>
+                  <p>
+                  <div>
+                    <img src="hands.jpg" width="250px" height="150px"><br><br>
+                    <input type="radio" id="question-2-yes" name="question-2" value="yes">
+                    <label for="question-2-yes">yes</label><br>
+                    <input type="radio" id="question-2-somewhat" name="question-2" value="somewhat">
+                    <label for="question-2-somewhat">somewhat</label><br>
+                    <input type="radio" id="question-2-no" name="question-2" value="no">
+                    <label for="question-2-no">no</label>
                   </div>
-                  <div class="carousel-item">
-                    <h1 class="question">Question: 2</h1>
-                    <p class="first">Which one among these is a left hand?</p>
-                    <p>
-                      <div>
-                        <img src="hands.jpg" width="300px" height="200px"><br><br>
-                        <input type="radio" id="left" name="leftright" value="LEFT">
-                        <label for="left">LEFT</label><br>
-                        <input type="radio" id="right" name="leftright" value="RIGHT">
-                        <label for="right">RIGHT</label>
-                      </div>
-                    </p>
+                  </p>
+                </div>
+                <div class="carousel-item h-100">
+                  <h1 class="question">Question: 3</h1>
+                  <p class="first">Repeat the given numbers in reverse order.<br>1 7 9 0 5 4 0</p>
+                  <p>
+                  <div>
+                    <input type="radio" id="question-3-option-1" name="question-3" value="question-3-option-1">
+                    <label for="question-3-option-1">0 4 5 9 0 7 1</label><br>
+                    <input type="radio" id="question-3-option-2" name="question-3" value="question-3-option-2">
+                    <label for="question-3-option-2">0 5 4 0 9 7 1</label><br>
+                    <input type="radio" id="question-3-option-3" name="question-3" value="question-3-option-3">
+                    <label for="question-3-option-3">0 4 5 0 9 7 1</label><br>
+                    <input type="radio" id="question-3-option-4" name="question-3" value="question-3-option-4">
+                    <label for="question-3-option-4">8 4 5 0 6 7 1</label><br>
                   </div>
-                  <div class="carousel-item">
-                    <h1 class="question">Question: 3</h1>
-                    <p class="first">Repeat the given numbers in reverse order.<br>1 7 9 0 5 4 0</p>
-                    <p>
-                      <div>
-                        <input type="radio" id="op1" name="op" value="op1">
-                        <label for="op1">0 4 5 9 0 7 1</label><br>
-                        <input type="radio" id="op2" name="op" value="op2">
-                        <label for="op2">0 5 4 0 9 7 1</label><br>
-                        <input type="radio" id="op3" name="op" value="op3">
-                        <label for="op3">0 4 5 0 9 7 1</label><br>
-                        <input type="radio" id="op4" name="op" value="op4">
-                        <label for="op4">8 4 5 0 6 7 1</label><br>
-                      </div>
-                    </p>
+                  </p>
+                </div>
+                <div class="carousel-item h-100">
+                  <h1 class="question">Question: 4</h1>
+                  <p class="first">Has anyone in your family been suffering from dyslexia?</p>
+                  <p>
+                  <div>
+                    <input type="radio" id="question-4-yes" name="question-4" value="yes">
+                    <label for="question-4-yes">YES</label><br>
+                    <input type="radio" id="question-4-not-sure" name="question-4" value="not-sure">
+                    <label for="question-4-not-sure">NOT SURE</label><br>
+                    <input type="radio" id="question-4-no" name="question-4" value="no">
+                    <label for="question-4-no">NO</label>
                   </div>
-                  <div class="carousel-item">
-                    <h1 class="question">Question: 4</h1>
-                    <p class="first">Has anyone in your family been suffering from dyslexia?</p>
-                    <p>
-                      <div>
-                        <input type="radio" id="yes" name="yesorno" value="Yes">
-                        <label for="yes">YES</label><br>
-                        <input type="radio" id="no" name="yesorno" value="No">
-                        <label for="no">NO</label>
-                      </div>
-                    </p>
+                  </p>
+                </div>
+                <div class="carousel-item h-100">
+                  <h1 class="question">Question: 5</h1>
+                  <p class="first"> Given the word below, replace First letter with the last letter. <br>MOON <br>What
+                    would be the new word?
+                  </p>
+                  <p>
+                  <div>
+                    <input type="radio" id="question-5-mono" name="question-5" value="mono">
+                    <label for="question-5-mono">MONO</label><br>
+                    <input type="radio" id="question-5-moon" name="question-5" value="moon">
+                    <label for="question-5-moon">MOON</label><br>
+                    <input type="radio" id="question-5-moom" name="question-5" value="moom">
+                    <label for="question-5-moom">MOOM</label><br>
+                    <input type="radio" id="question-5-noom" name="question-5" value="noom">
+                    <label for="question-5-noom">NOOM</label><br>
                   </div>
-                  <div class="carousel-item">
-                    <h1 class="question">Question: 5</h1>
-                    <p class="first"> Given the word below, replace First letter with the last letter. <br>MOON <br>What would be the new word?
-                    </p>
-                    <p>
-                      <div>
-                        <input type="radio" id="op1" name="op" value="op1">
-                        <label for="op1">MONO</label><br>
-                        <input type="radio" id="op2" name="op" value="op2">
-                        <label for="op2">MOON</label><br>
-                        <input type="radio" id="op3" name="op" value="op3">
-                        <label for="op3">MOOM</label><br>
-                        <input type="radio" id="op4" name="op" value="op4">
-                        <label for="op4">NOOM</label><br>
-                      </div>
-                    </p>
+                  </p>
+                </div>
+                <div class="carousel-item h-100">
+                  <h1 class="question">Question: 6</h1>
+                  <p class="first">What will you get after subtracting 9 from 100?</p>
+                  </p>
+                  <p>
+                  <div>
+                    <input type="radio" id="question-6-92" name="question-6" value="92">
+                    <label for="question-6-92">92</label><br>
+                    <input type="radio" id="question-6-62" name="question-6" value="62">
+                    <label for="question-6-62">62</label><br>
+                    <input type="radio" id="question-6-91" name="question-6" value="91">
+                    <label for="question-6-91">91</label><br>
+                    <input type="radio" id="question-6-61" name="question-6" value="61">
+                    <label for="question-6-61">61</label><br>
                   </div>
-                  <div class="carousel-item">
-                    <h1 class="question">Question: 6</h1>
-                    <p class="first">What will you get after subtracting 9 from 100?</p>
-                    </p>
-                    <p>
-                      <div>
-                        <input type="radio" id="op1" name="op" value="op1">
-                        <label for="op1">92</label><br>
-                        <input type="radio" id="op2" name="op" value="op2">
-                        <label for="op2">62</label><br>
-                        <input type="radio" id="op3" name="op" value="op3">
-                        <label for="op3">91</label><br>
-                        <input type="radio" id="op4" name="op" value="op4">
-                        <label for="op4">61</label><br>
-                      </div>
-                    </p>
+                  </p>
+                </div>
+                <div class="carousel-item h-100">
+                  <h1 class="question">Question: 7</h1>
+                  <p class="first">Tick the correct option after reversing the names of the month in reverse order.</p>
+                  </p>
+                  <p>
+                  <div>
+                    <input type="radio" id="question-7-option-1" name="question-7" value="question-7-option-1">
+                    <label for="question-7-option-1">January February March April June May July August September October
+                      November
+                      December</label><br>
+                    <input type="radio" id="question-7-option-2" name="question-7" value="question-7-option-2">
+                    <label for="question-7-option-2">December November October September August July June May April
+                      March February
+                      January</label><br>
+                    <input type="radio" id="question-7-option-3" name="question-7" value="question-7-option-3">
+                    <label for="question-7-option-3">December November October September August July June April February
+                      March
+                      January</label><br>
+                    <input type="radio" id="question-7-option-4" name="question-7" value="question-7-option-4">
+                    <label for="question-7-option-4">December October November September August July June May April
+                      February March
+                      January</label><br>
                   </div>
-                  <div class="carousel-item">
-                    <h1 class="question">Question: 7</h1>
-                    <p class="first">Tick the correct option after reversing the names of the month in reverse order.</p>
-                    </p>
-                    <p>
-                      <div>
-                        <input type="radio" id="op1" name="op" value="op1">
-                        <label for="op1">January February March April June May July August September October November December</label><br>
-                        <input type="radio" id="op2" name="op" value="op2">
-                        <label for="op2">December November October September August July June May April March February January</label><br>
-                        <input type="radio" id="op3" name="op" value="op3">
-                        <label for="op3">December November October September August July June April February March January</label><br>
-                        <input type="radio" id="op4" name="op" value="op4">
-                        <label for="op4">December October November September August July June May April February March January</label><br>
-                      </div>
-                    </p>
+                  </p>
+                </div>
+                <div class="carousel-item h-100">
+                  <h1 class="question">Question: 8</h1>
+                  <p class="first">What do you see in the picture?</p>
+                  </p>
+                  <p>
+                  <div>
+                    <img src="god.jpg" width="300px" height="200px"><br><br>
+                    <input type="radio" id="dog" name="question-8" value="dog">
+                    <label for="dog">DOG</label><br>
+                    <input type="radio" id="god" name="question-8" value="god">
+                    <label for="god">GOD</label>
                   </div>
-                  <div class="carousel-item">
-                    <h1 class="question">Question: 8</h1>
-                    <p class="first">What do you see in the picture?</p>
-                    </p>
-                    <p>
-                      <div>
-                        <img src="god.jpg" width="300px" height="200px"><br><br>
-                        <input type="radio" id="dog" name="god" value="LEFT">
-                        <label for="dog">DOG</label><br>
-                        <input type="radio" id="god" name="god" value="RIGHT">
-                        <label for="god">GOD</label>
-                      </div>
-                    </p>
+                  </p>
+                </div>
+                <div class="carousel-item h-100">
+                  <h1 class="question">Question: 9</h1>
+                  <p class="first">Which Fruit is this?</p>
+                  </p>
+                  <p>
+                  <div>
+                    <img src="Indian_jujube_(fruit).jpg" width="300px" height="200px"><br><br>
+                    <input type="radio" id="apple" name="question-9" value="apple">
+                    <label for="apple">APPLE</label><br>
+                    <input type="radio" id="pear" name="question-9" value="pear">
+                    <label for="pear">PEAR</label>
                   </div>
-                  <div class="carousel-item">
-                    <h1 class="question">Question: 9</h1>
-                    <p class="first">Which Fruit is this?</p>
-                    </p>
-                    <p>
-                      <div>
-                        <img src="Indian_jujube_(fruit).jpg" width="300px" height="200px"><br><br>
-                        <input type="radio" id="apple" name="fruit" value="apple">
-                        <label for="apple">APPLE</label><br>
-                        <input type="radio" id="pear" name="fruit" value="pear">
-                        <label for="pear">PEAR</label>
-                      </div>
-                    </p>
+                  </p>
+                </div>
+                <div class="carousel-item h-100">
+                  <h1 class="question">Question: 10</h1>
+                  <p class="first">What is the correct word?</p>
+                  </p>
+                  <p>
+                  <div>
+                    <input type="radio" id="batle" name="question-10" value="batle">
+                    <label for="batle">BATLE</label><br>
+                    <input type="radio" id="table" name="question-10" value="table">
+                    <label for="table">TABLE</label>
                   </div>
-                  <div class="carousel-item">
-                    <h1 class="question">Question: 10</h1>
-                    <p class="first">What is the correct word?</p>
-                    </p>
-                    <p>
-                      <div>
-                        <input type="radio" id="batle" name="word" value="batle">
-                        <label for="batle">BATLE</label><br>
-                        <input type="radio" id="table" name="word" value="table">
-                        <label for="table">TABLE</label>
-                      </div>
-                    </p>
-                  </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carousel-for-questions"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
+                  </p>
+                  <button data-modal-target="#popup" class="btn btn-primary finish" type="button">FINISH</button>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-for-questions"
+                  data-bs-slide="prev" disabled>
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carousel-for-questions"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-for-questions"
+                  data-bs-slide="next" disabled>
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
@@ -257,7 +251,10 @@
           </div>
         </div>
       </div>
-    </main>
-    <footer>Made with &hearts; in India</footer>
-  </body>
+  </main>
+  <div id="overlay"></div>
+
+  <footer>Made with &hearts; in India</footer>
+</body>
+
 </html>
