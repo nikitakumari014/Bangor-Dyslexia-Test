@@ -9,6 +9,7 @@ prevButton.style.display = 'none';
 
 for (const button of controlButtons) {
     button.setAttribute('disabled', '');
+    
 }
 
 startButton.addEventListener('click', function () {
